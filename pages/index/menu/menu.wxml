@@ -1,0 +1,52 @@
+<!-- 轮播图 -->
+<swiper autoplay interval="1500" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item> <image mode="widthFix" src="https://bkimg.cdn.bcebos.com/pic/3bf33a87e950352ac65c4047a50aecf2b21193131d60?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" style='width:100%'/> </swiper-item>
+    <swiper-item> <image mode="widthFix" src="https://bkimg.cdn.bcebos.com/pic/64380cd7912397dda1441483c0c8a5b7d0a20df429ab?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" style='width:100%'/> </swiper-item>
+    <swiper-item> <image mode="widthFix" src="https://bkimg.cdn.bcebos.com/pic/8cb1cb1349540923c3082bf09458d109b2de49de?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto" style='width:100%'/> </swiper-item>
+</swiper>
+
+<view class="title">菜谱</view>
+
+<view class='container'>
+  <view class='content'>
+    <view wx:if='{{currentTab == 0}}'>
+      <timeint/>
+    </view>
+    <view wx:if='{{currentTab == 1}}'>
+      <lazyman/>
+    </view>
+    <view wx:if='{{currentTab == 2}}'>
+      <bodybuild/>
+    </view>
+    <view wx:if='{{currentTab == 3}}'>
+      <caidan/>
+    </view>
+  </view>
+
+  <!-- 左面的三个tab -->
+  <view class='left-tab'>
+    
+ <!-- 右边图片及文案 -->
+      <view class="hide{{showView?'show':''}}" bindtap="onChangeShowState">
+        <image src="{{currentTab == 0 || currentTab == 1 || currentTab == 2 ? 'hide' : 'https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/people.png'}}" class='pic' ></image>
+        <view class="text {{currentTab == 0 || currentTab == 1 || currentTab == 2 ? 'text hide' : 'text'}}" bindtap="switchTab">快点击菜单试试吧</view>
+      </view>
+
+ <!-- 左边菜谱 -->
+    <view class='tab-item {{currentTab == 0 ? "active" : "tab-item"}}' data-current="0" bindtap='switchTab'>  
+      <image src='{{currentTab == 0 ? "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/timeint1.png" : "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/timeint.png"}}' class='item-img'></image>
+      <text class='item-text'>时段菜谱</text>
+    </view>
+
+    <view class='tab-item {{currentTab == 1 ? "active" : "tab-item"}}' data-current="1" bindtap='switchTab'>
+      <image src='{{currentTab == 1 ? "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/lazyman1.png" : "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/lazyman.png"}}' class='item-img'></image>
+      <text class='item-text'>懒人菜谱</text>
+    </view>
+
+    <view class='tab-item {{currentTab == 2 ? "active" : "tab-item"}}' data-current="2" bindtap='switchTab'>
+      <image src='{{currentTab == 2 ? "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/bodybuild1.png" : "https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/bodybuild.png"}}' class='item-img'></image>
+      <text class='item-text'>健身菜谱</text>
+    </view>
+    
+  </view>
+</view> 

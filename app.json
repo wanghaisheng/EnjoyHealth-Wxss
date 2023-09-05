@@ -1,0 +1,81 @@
+{
+  "navigationBarBackgroundColor":"#FF4040",
+  "navigationBarTextStyle":"white",
+  "usingComponents": {
+  },  
+  "pages":[
+    "pages/index/index",
+    "pages/index/menu/menu",
+    "pages/index/reliang/reliang",
+    "pages/index/tishi/tishi",
+    "pages/index/zhuanpan/zhuanpan",
+
+    "pages/index/tishi/tishi01/tishi01",
+    "pages/index/tishi/tishi02/tishi02",
+    "pages/index/tishi/tishi03/tishi03",
+
+    "pages/index/menu/search/search",
+    "pages/index/menu/mankind/bodybuild/caipu/caipu",
+    "pages/index/menu/mankind/bodybuild/bodybuild",
+    "pages/index/menu/mankind/lazyman/lazyman",
+    "pages/index/menu/mankind/lazyman/caipu/caipu",
+    "pages/index/menu/mankind/timeint/timeint",
+    "pages/index/menu/mankind/timeint/breakfast/breakfast",
+    "pages/index/menu/mankind/timeint/dinner/dinner",
+    "pages/index/menu/mankind/timeint/lunch/lunch",
+
+    "pages/index/menu/foodkind/dumping/dumping",
+    "pages/index/menu/foodkind/cooking/cooking",
+    "pages/index/menu/foodkind/hongshaorou/hongshaorou",
+    "pages/index/menu/foodkind/lanzhoulamian/lanzhoulamian",
+    "pages/index/menu/foodkind/pidanshourouzhou/pidanshourouzhou",
+    "pages/index/menu/foodkind/yangzhouchaofan/yangzhouchaofan",
+
+
+    "pages/shibie/shibie",
+    "pages/shibie/baidu/baike",
+
+    "pages/dingcan/dingcan",
+    "pages/dingcan/order/order",
+    "pages/dingcan/pay/pay",
+
+    "pages/user/user",
+    "pages/user/contact/contact"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar":{
+    "color": "#000",
+    "selectedColor": "#1E90FF",
+    "list": [{
+     "pagePath": "pages/index/index",
+     "text": "主页",
+     "iconPath": "/images/navigation_bar/主页_off.png",
+     "selectedIconPath": "/images/navigation_bar/主页_on.png" 
+    },
+    {
+      "pagePath":"pages/shibie/shibie",
+      "text": "菜品识别",
+      "iconPath": "/images/navigation_bar/相机_off.png",
+      "selectedIconPath": "/images/navigation_bar/相机_on.png" 
+     },
+     {
+      "pagePath":"pages/dingcan/dingcan",
+      "text": "订餐",
+      "iconPath": "/images/navigation_bar/美食_off.png",
+      "selectedIconPath": "/images/navigation_bar/美食_on.png" 
+     },
+     {
+        "pagePath":"pages/user/user",
+        "text": "我的",
+        "iconPath": "/images/navigation_bar/用户_off.png",
+        "selectedIconPath": "/images/navigation_bar/用户_on.png" 
+     }
+    ]},
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+  
+}

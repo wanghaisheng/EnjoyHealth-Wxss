@@ -1,0 +1,55 @@
+<!-- 标题 -->
+<view class='this_title'>个人信息</view>
+
+<!-- 1、性别 -->
+<text>\n</text>
+<view class='shuru'>
+  <text>性别</text>
+  <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps01'>
+        <text class='select_text'>{{selectDatas01[indexs01]}}</text>
+        <image class='select_img {{shows01&&"select_img_rotate"}}' src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/shuju_off.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows01?(selectDatas01.length>5?300:selectDatas01.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs01==selectDatas01.length-1&&"border:0;"}}' wx:for='{{selectDatas01}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps01'>{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<!-- 2、属性 -->
+<text>\n\n</text>
+<view class='shuru'>
+  <text>习惯</text>
+    <!-- 下拉框 -->
+    <view class='select_box'>
+      <view class='select' catchtap='selectTaps02'>
+        <text class='select_text'>{{selectDatas02[indexs02]}}</text>
+        <image class='select_img {{shows02&&"select_img_rotate"}}' src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/shuju_off.png'></image>
+      </view>
+      <view class='option_box' style='height:{{shows02?(selectDatas02.length>5?300:selectDatas02.length*60):0}}rpx;'>
+        <text class='option' style='{{indexs02==selectDatas02.length-1&&"border:0;"}}' wx:for='{{selectDatas02}}' wx:key='this' data-index='{{index}}' catchtap='optionTaps02'>{{item}}</text>
+      </view>
+    </view>
+</view>
+
+<!-- 3、年龄 -->
+<text>\n\n</text>
+<view class="view-contain-ti">
+    <text class="text-ti">年龄</text>
+    <input class="input1"></input>
+</view>
+
+<!-- 4、体重 -->
+<text>\n</text>
+<view class="view-contain-ti">
+    <text class="text-ti">体重(kg)</text>
+    <input class="input1"></input>
+</view>
+
+<!--5、底部按钮-->
+<view class="anniu">
+  <button class="btn"  formType="submit" bindtap="totishi03">
+   下一步
+ </button>
+</view>

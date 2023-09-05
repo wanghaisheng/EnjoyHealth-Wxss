@@ -1,0 +1,60 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">兰州拉面</view>
+
+<!-- 食品简介 -->
+<view id="introduce">兰州拉面，是一种食品名称，原名兰州牛肉面，始于清朝嘉庆年间</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703918fd8e594b0463d269759ee6ffd?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto"></image>
+</view>
+
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、牛肉洗净，把肉里的血水，血丝清除干净。
+  </view>
+  <view class="step">二、锅里放冷水，牛肉切成十公分见方块状，一起下锅煮。
+  </view>
+  <view class="step">三．水开，收小火，撇血沫子，同时翻搅肉块，再撇沫子，大约5-10分钟。放佐料。
+  </view>
+  <view class="step">四．小火40分钟。用筷子试一试，肉烂即可，放盐，再煮10分钟。
+  </view>
+  <view class="step">五．再煮10分钟。最后，煮面，捞面出锅
+  </view>
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material">拉面</view>
+    <view class="material">牛肉</view>
+    <view class="material">香菜</view>
+    <view class="material">蒜苗</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥{{money}}</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+

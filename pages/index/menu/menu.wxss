@@ -1,0 +1,97 @@
+/* 导航栏样式设计 */
+.top{
+    height: 40rpx;
+    background-color: #FF4040; 
+    border-bottom-left-radius: 50rpx;
+    border-bottom-right-radius: 50rpx;
+  }
+  /* 容器整体设置 */
+  .container {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 30rpx;
+    /* 暂时颜色 */
+    /* background-color: rgb(246,246,246); */
+  } 
+  /* 右边tab的布局设置 */
+  .content{
+    position: absolute; 
+    right: 0rpx;
+    width: 58%;
+  }
+  /* 图片设置 */
+  .item-img{
+      height: 210rpx;
+      width: 260rpx;
+      border-radius: 43rpx;
+  }
+  /* 左边tab的布局设置 */
+  .left-tab{
+      margin-top: 50rpx;
+  }
+  /* 文字图片容器设置 */
+  .tab-item{
+      margin-bottom: 20rpx;
+  }
+  /* 文字设置 */
+  .item-text{
+      position: relative;
+      /* font-size: larger; */
+      font-weight: 800rpx;
+      left: -220rpx;
+      top: -100rpx;
+      color: #FFF;
+      font-family: fangsong;
+      font-size: 49rpx;
+  }
+/* 点击菜单图片文字样式 */
+  .pic{
+    height: 460rpx;
+    width: 450rpx;
+    position: absolute;
+    right: -10rpx;
+    margin-top: 130rpx;
+  }
+  .text{
+    position: absolute;
+    right: 30rpx;
+    margin-top: 590rpx;
+    font-size: 50rpx;
+    color: #c2c2c2;
+  }
+  .hide{
+    display: none;    
+   }
+   .show{ 
+    display: block;
+   }
+/* 底部三角照片 */
+#bottompicbox{
+  background-color: rgb(246,246,246);
+}
+#bottompic{
+  width: 309rpx;
+  height: 173rpx;
+}
+
+#bottompeople{
+  background-color: rgb(246,246,246);
+}
+
+ #bottompeoplepic{
+  width: 400rpx;
+  height: 300rpx;
+  /* float: right; */
+ }
+
+ /* 标题 */
+.title {
+  margin-top: 30rpx;
+  font-size: 30px;
+  color: rgb(0, 73, 63);
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bolder;
+}

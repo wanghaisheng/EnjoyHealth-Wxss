@@ -1,0 +1,26 @@
+<!-- 标题 -->
+<view class='this_title'>食物喜好</view>
+
+<!-- 喜欢的菜品 -->
+<text>\n</text>
+<view class='this_title'>喜欢的菜系</view>
+<view class="sign-setting-border {{item.isSelect?'selected':''}}"
+wx:for="{{applyList01}}" wx:key="Item_id" bindtap='selectApply01'  
+ data-index='{{index}}'>{{item.Item_Name}}
+ </view>
+
+ <!-- 不喜欢的菜品 -->
+ <view class='this_title'>不喜欢的菜系</view>
+<view class="sign-setting-border {{item.isSelect?'selected':''}}"
+wx:for="{{applyList02}}" wx:key="Item_id" bindtap='selectApply02'  
+ data-index='{{index}}'>{{item.Item_Name}}
+ </view>
+
+ <!-- 提交 -->
+<text>\n\n</text>
+<view class="anniu">
+  <button class="btn"  formType="submit" bindtap="totishi02">
+   下一步
+ </button>
+</view>
+

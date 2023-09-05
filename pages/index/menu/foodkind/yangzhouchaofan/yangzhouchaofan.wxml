@@ -1,0 +1,69 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">扬州炒饭</view>
+
+<!-- 食品简介 -->
+<view id="introduce">扬州炒饭又名扬州蛋炒饭，是江苏省扬州市的一道传统名菜</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/8cb1cb1349540923c3082bf09458d109b2de49de?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto"></image>
+</view>
+
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、将米淘干净，煮熟。控制米水比例和火候，饭颗粒松软，不夹生，不烂。
+  </view>
+  <view class="step">二、鸡蛋磕入碗中，搅拌后备用。
+  </view>
+  <view class="step">三．炒锅放置火上，舀入食用植物油（约20ml）烧制五成热时加入虾仁滑热，捞出备用。
+  </view>
+  <view class="step">四．将水发海参，熟的方鸡腿肉，水发花菇。
+  </view>
+  <view class="step">五．鲜笋切成约4mm的小方丁、火腿切成2mm×4mm×4mm方片和干贝制成丝煸炒后加入湖虾仔鸡清汤、绍酒和3g精盐烧沸，作什锦料备用。
+  </view>
+  <view class="step">六．炒锅上中火，舀入食用植物油，烧至五成热时，倒入鸡蛋液炒至半凝固状。
+  </view>
+  <view class="step">七．加入米饭、青豌豆和剩余葱末炒匀，再加入什锦料，继续炒匀，加入盛器内
+  </view>
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material"> 香米</view>
+    <view class="material"> 青豆</view>
+    <view class="material">黄瓜</view>
+    <view class="material">香肠</view>
+    <view class="material">虾仁</view>
+    <view class="material">胡萝卜丁</view>
+    <view class="material">玉米粒</view>
+    <view class="material">鸡蛋</view>
+    <view class="material">香葱</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥{{money}}</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+

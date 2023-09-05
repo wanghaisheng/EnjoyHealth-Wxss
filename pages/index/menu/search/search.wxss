@@ -1,0 +1,83 @@
+/* pages/search/search.wxss */
+
+page{
+	background: #f5f5f5
+}
+.wrapper{
+	/*position: relative;*/
+	display: flex;
+	align-items: center;
+	position: relative;
+	padding: 16rpx 0;
+	background: white;
+}
+.input{
+	width: 510rpx;
+	height: 56rpx;
+	background:rgba(247,247,247,1);
+	border-radius:10rpx;
+	padding-left: 64rpx;
+	font-size: 28rpx;
+	margin-left: 57rpx;
+	
+}
+.icon{
+	width: 30rpx;
+	height: 30rpx;
+	position: absolute;
+	top:50%;
+	transform: translateY(-50%);
+	left: 79rpx
+}
+.text{
+	font-size: 30rpx;
+	color: #FF4C43;
+	margin-left: 21rpx;
+}
+
+.area2{
+	padding: 40rpx;
+
+}
+.area2__title{
+	font-size: 28rpx;
+}
+.area2__main{
+	margin-top: -10rpx;
+	margin-left: -40rpx;
+	color:rgba(102,102,102,1);
+	display: flex;
+	flex-wrap: wrap;
+}
+.area2__main>view{
+	font-size: 26rpx;
+	border:1rpx solid rgba(212,212,212,1);
+	border-radius:5rpx;
+	margin-left: 40rpx;
+	margin-top: 40rpx;
+	padding: 11rpx 26rpx;
+	flex-shrink: 0
+}
+.area3__title{
+	display: flex;
+	margin-top: -10rpx;
+	justify-content: space-between;
+}
+.area3__title>image{
+	width: 34rpx;
+	height: 34rpx;
+
+}
+.icon-clear{
+	width: 26rpx;
+	height: 26rpx;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 140rpx;
+	z-index: 2
+}
+button{
+	padding:0;
+	background: none;
+}

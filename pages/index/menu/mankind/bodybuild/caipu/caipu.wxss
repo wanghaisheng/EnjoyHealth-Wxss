@@ -1,0 +1,37 @@
+/* 右边tab容器整体布局 */
+.tab-wrapper{
+    display: flex;
+    flex-direction: column;
+}
+/* 图片与文字容器设置 */
+.pic-cont{
+    display: flex;
+    flex-direction: row;
+    /* border: 1rpx solid #FF4040; */
+    border-radius: 25rpx;
+    width: 400rpx;
+    height: 150rpx;
+    margin-top: 20rpx;
+    margin-left: -26rpx;
+    background-color: #FFF;
+}
+/* 图片设置 */
+.picture{
+    border-radius: 25rpx;
+    width: 150rpx;
+    height: 150rpx;
+}
+/* 文字容器 */
+.wordcon{
+    width: 240rpx;
+    margin-left: 8rpx;
+    overflow:hidden;    /*超出一行文字自动隐藏*/
+    text-overflow:ellipsis; /*文字隐藏后添加省略号*/
+}
+.foodname{
+    font-size: 28rpx;
+}
+.introduce{
+    margin-top: 5rpx;
+    font-size: 22rpx;
+}

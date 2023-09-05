@@ -1,0 +1,53 @@
+<view class='container'>
+  
+    <view class='tab-wrapper'>
+    
+        <!-- 兰州拉面 -->
+    <navigator class='tab' hover-class="none" url="/pages/index/menu/foodkind/lanzhoulamian/lanzhoulamian">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/8b13632762d0f703918fd8e594b0463d269759ee6ffd?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">兰州拉面</view>
+                <!-- 食品简介 -->
+                <view class="introduce">简单上手</view>
+            </view>
+        </view>
+    </navigator>
+    
+    <!-- 扬州炒饭 -->
+    <navigator class='tab' hover-class="none" url="/pages/index/menu/foodkind/yangzhouchaofan/yangzhouchaofan">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/8cb1cb1349540923c3082bf09458d109b2de49de?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U5Mg==,g_7,xp_5,yp_5/format,f_auto" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">扬州炒饭</view>
+                <!-- 食品简介 -->
+                <view class="introduce">吃的饱，很香</view>
+            </view>
+        </view>
+    </navigator>
+
+        <!-- 外婆红烧肉 -->
+    <navigator class='tab' hover-class="none" url="/pages/index/menu/foodkind/hongshaorou/hongshaorou">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/96dda144ad345982cb2620ca09f431adcbef843e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">外婆红烧肉</view>
+                <!-- 食品简介 -->
+                <view class="introduce">好吃，拿手好菜</view>
+            </view>
+        </view>
+    </navigator>
+    
+    </view>   
+
+
+</view>

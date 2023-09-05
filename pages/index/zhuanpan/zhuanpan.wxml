@@ -1,0 +1,18 @@
+<!--index.wxml-->
+<view>
+  <!-- 标题 -->
+  <view class="title" id="eatask">🍌是不是又不知道吃什么啦🍌
+  </view>
+  <view class="title" id="talk">🍍转盘告诉你🍍</view>
+  <text>\n</text>
+  <!-- 转盘 -->
+  <zhuanpan id='zhuanpan' bind:myData='getData' bind:myAwards="getAwards" bind:startZhuan="startZhuan" size='{{size}}' musicflg='{{musicflg}}' fastJuedin='{{fastJuedin}}' repeat='{{repeat}}' zhuanpanArr='{{xiaojuedingArr}}' awardsConfig='{{awardsConfig}}'>
+  </zhuanpan>
+
+  <!-- 配餐列表 -->
+  <view class="title result">🥗{{s_awards}}🥗</view>
+  <view class="liebiao">👇配餐列表👇
+    <text class="peican_result">\n\n{{liebiao}}</text>
+  </view>
+
+</view>

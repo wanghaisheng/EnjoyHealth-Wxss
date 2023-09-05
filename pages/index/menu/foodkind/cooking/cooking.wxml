@@ -1,0 +1,58 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">咖喱牛肉饭</view>
+
+<!-- 食品简介 -->
+<view id="introduce">咖喱牛肉饭是一道菜品，起源于香料大国印度，使用印度特有的香料咖喱粉制作而成。</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/咖喱牛肉饭.jpg"></image>
+</view>
+ 
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、牛肉切小块，氽烫；蘑菇、小黄瓜分别洗净切片，马铃薯、胡萝卜分别洗净去皮，洋葱去皮，均切丁。
+  </view>
+  <view class="step">二、马铃薯、胡萝卜放入滚水中氽烫，捞出沥干。锅中倒3大匙油烧热，分别放入小黄瓜及蘑菇略炸，捞出沥油。
+  </view>
+  <view class="step">三、锅中留2大匙油加热，放A料以小火炒香，加入牛肉和洋葱炒匀，再加其他材料及B料小火煮10分钟，最后加C料勾芡，淋上D料，即可盛出，淋在白饭上 。
+  </view>
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material">牛肉</view>
+    <view class="material">马铃薯</view>
+    <view class="material">胡萝卜</view>
+    <view class="material">洋葱</view>
+    <view class="material">蘑菇</view>
+    <view class="material">小黄瓜</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥20.9</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+

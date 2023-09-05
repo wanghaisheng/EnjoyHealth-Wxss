@@ -1,0 +1,12 @@
+<view class='container'>
+
+  <view class='tab-wrapper'>
+    <view id='tableft' class='tab-left tab {{currentTab === 0 ? "tab-active" : "tab"}}' bindtap='switchTab'>早餐</view>
+    <view id='tabcentre' class='tab-centre tab {{currentTab === 1 ? "tab-active" : "tab"}}' bindtap='switchTab'>午餐</view>
+    <view id='tabright' class='tab-right tab {{currentTab === 2 ? "tab-active" : "tab"}}' bindtap='switchTab'>晚餐</view>
+  </view>
+
+  <view class='content-wrapper' wx:if='{{currentTab === 0}}'><breakfast/></view>
+  <view class='content-wrapper' wx:if='{{currentTab === 1}}'><lunch/></view>
+  <view class='content-wrapper' wx:if='{{currentTab === 2}}'><dinner/></view>
+</view>

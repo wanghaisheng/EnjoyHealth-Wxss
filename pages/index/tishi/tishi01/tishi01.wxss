@@ -1,0 +1,33 @@
+/* pages/tishi/tishi01/tishi01.wxss */
+.sign-setting-border{
+    margin-left: 2%;
+    width:22%;
+    float: left;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #999999;
+    font-size: 14px;
+    text-align: center;
+    font-family: -apple-system;
+    margin-bottom:15px;
+    border:1px solid #DBDBDB;
+     
+    }
+    .selected{
+      background-color: #FFA404;
+      color: rgba(255, 255, 255, 1);
+      border:1px solid #FFA404;
+    }
+
+/* 按钮可用 */
+.btn{
+  height: 90rpx;
+  width: 100% ;
+  color: white;
+  font-size: 30rpx ;
+  background-color:rgb(116,132,170) ;
+}
+
+    

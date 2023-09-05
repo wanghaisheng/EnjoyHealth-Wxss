@@ -1,0 +1,8 @@
+<view class='container'>
+
+  <view class='tab-wrapper'>
+    <view id='tabright' class='tab-right tab {{currentTab === 0 ? "tab-active" : "tab"}}' bindtap='switchTab'>健身菜谱</view>
+  </view>
+
+  <view class='content-wrapper' wx:if='{{currentTab === 0}}'><caipu/></view>
+</view>

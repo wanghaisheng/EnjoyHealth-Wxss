@@ -1,0 +1,47 @@
+<!--index.wxml-->
+
+<view class="page">
+<!-- 标题区 --> 
+  <view class="page__hd" >
+    <!-- <view class="title">菜品识别</view> -->
+    <text class="page__desc">👇上传的图片👇</text>
+    <view class="age__hd_image">
+      <image style="border-radius: 16rpx;" src="{{imageUrl}}"></image>
+    </view>
+  </view>
+
+
+<!-- 上传按钮 -->
+<text class="page__desc">👇上传按钮👇</text>
+  <view class="upload">
+    <view class="upload_button">
+      <button  type="primary" bindtap="get_image">
+        上传食物
+      </button>
+    </view>
+  </view>
+<!-- 识别图片 -->
+<text class="page__desc">👇识别按钮👇</text>
+  <view class="recognition_btn">
+    <button style="width:50vw" bindtap="recognition_image" disabled="{{btn_enable}}">
+      识别菜品
+    </button>
+  </view>
+
+<!-- 结果区 -->
+  <text>\n</text>
+  <view class="title">菜品详情</view>
+    <scroll-view class='baikeinfo' scroll-y>
+      <view class='baikecard'>
+        <view class='baikecontent'>
+          <text>1、识别结果 :\n</text>
+          {{load_title}}</view>
+        <text class='baikecontent'>
+          <text>2、所含热量 :</text>
+        {{load_message}}</text>
+      <view class='wrapper'>
+        <button class='bt_2' bindtap='gotobaike'>查看百科</button>
+      </view>
+      </view>
+    </scroll-view>
+</view>

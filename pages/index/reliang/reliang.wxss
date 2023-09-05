@@ -1,0 +1,115 @@
+/* 性别样式 */
+.sex{
+  text-align: center;
+  font-size:medium;
+  font-style: normal;
+  /* color: rgb(14, 177, 218); */
+  color: rgb(222, 93, 68);
+  font-weight: 550;
+  font-size: 40rpx;
+  margin: 37rpx 112rpx 31rpx 100rpx;
+}
+
+/* 选择的性别样式 */
+.choose{
+  text-align: center;
+  font-size:medium;
+  font-style: normal;
+  /* 修改 */
+  /* color: rgb(10, 10, 10); */
+  color: rgb(254, 107, 0);
+  font-size: 40rpx;
+  font-weight: 540;
+  border-bottom: 1rpx solid red;
+  width: 600rpx;
+  margin-left: 87rpx;
+}
+
+/* 输入的文本样式 */
+.shuru{
+  text-align: center;
+  font-size:medium;
+  font-style: normal;
+  /* color: rgb(6, 112, 233); */
+  /* 修改后 */
+  color: #FFF;
+  background-color: rgb(249 169 112);
+  width: 400rpx;
+  height: 66rpx;
+  margin-left: 190rpx;
+  border-radius: 15rpx;
+  font-size: 40rpx;
+  text-align: center;
+  line-height: 66rpx;
+}
+
+/* 输入框样式 */
+input{
+  border: 2px solid rgb(85, 85, 85);
+  border-radius: 10px;
+  margin: 10px 50px;
+  font-size: 15px;
+  color: black;
+  padding: 10px;
+  margin-right: 70rpx;
+}
+
+/* 可摄入热量的标题 */
+.shujushuchu{
+  text-align: center;
+  font-size: larger;
+  color: blueviolet;
+  height: 140rpx;
+  background-color: rgb(246,246,246);
+  border-radius: 0 0 30rpx 30rpx;
+}
+
+/* 测测你每天的热量摄入值吧 */
+#reliangtitle{
+  font-family: \5B8B\4F53;
+  font-weight: 600;
+  margin-top: 15rpx;
+  margin: 13rpx 20rpx 15rpx 15rpx;
+  /* background-color: rgb(121 144 239); */
+  background-color: rgb(173 186 239);
+  color: rgb(255, 255, 255);
+  width: 719rpx;
+  height: 114rpx;
+  line-height: 114rpx;
+  text-align: center;
+  border-radius: 29rpx;
+}
+
+/* 小草背景图片 */
+#reliangbeijing{
+  width: 361rpx;
+  height: 166rpx;
+}
+
+/* 性别图标 */
+.selectsex{
+  width: 120rpx;
+  height: 88rpx;
+}
+
+/* 您选中的是： */
+#sextip{
+  background-color: rgb(249 169 112);
+  display: inline-block;
+  width: 137rpx;
+  height: 70rpx;
+  color: #FFF;
+  text-align: center;
+  line-height: 70rpx;
+  border-radius: 20rpx;
+  margin-right: 32rpx;
+}
+
+/* 身高、体重、年龄图标 */
+.inputicon{
+  width: 100rpx;
+  height: 100rpx;
+  margin-top: 27rpx;
+  margin-left: 10rpx;
+  float: left;
+}

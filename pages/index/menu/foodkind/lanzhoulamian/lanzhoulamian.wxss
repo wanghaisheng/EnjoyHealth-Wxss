@@ -1,0 +1,170 @@
+/* 导航栏样式设计 */
+#ui{
+  height: 40rpx;
+  background-color: #FF4040;
+  border-bottom-left-radius: 50rpx;
+  border-bottom-right-radius: 50rpx;
+}
+
+/* 食品标题设计 */
+#title{
+  font-size: 40rpx;
+  font-weight: 600;
+  border-bottom: 10rpx solid rgb(252,85,49);
+  /* background-color: #EAEAEA; */
+  height: 80rpx;
+  line-height: 80rpx;
+  padding-left: 30rpx;
+  width: 500rpx;
+  padding-left: 45rpx;
+  margin-left: 15rpx;
+  border-radius: 50rpx;
+}
+
+/* 食物简介 */
+#introduce{
+  background-color: rgb(249,249,251);
+  margin-top: 35rpx;
+  padding: 32rpx;
+  text-align: left;
+  font-family: \5B8B\4F53;
+  font-weight: 550;
+  border-bottom: 6rpx solid rgb(252,85,49);
+  border-radius: 0 50rpx;
+  width: 650rpx;
+}
+
+/* 食品图片 */
+#picture{
+  width: 50rpx;
+}
+
+#picImage{
+  width: 500rpx;
+}
+
+/* 步骤和原料小标题 */
+.smallTitle{
+  background-color: rgb(252,85,49);
+  padding: 20rpx;
+  width: 108rpx;
+  margin: 20rpx;
+  border-radius: 0 0 0 50rpx;
+  font-family: \9ED1\4F53;
+  color: #FFF;
+  margin-left: 27rpx;
+  padding-left: 42rpx;
+  font-size: 40rpx;
+  font-weight: 600;
+}
+
+.step{
+  background-color: rgb(249,249,251);
+  border: 3rpx solid rgb(209,209,209);
+  padding: 21rpx;
+  font-family: \5B8B\4F53;
+  margin: 6rpx;
+  margin-left: 13rpx;
+  margin-right: 13rpx;
+}
+
+/* 购买 */
+#buy{
+  /* background-color: blue; */
+  float: left;
+  width: 720rpx;
+  margin: 2rpx 22rpx;
+}
+
+/* 食物原料 */
+#materials{
+  float: left;
+}
+.material{
+  background-color: rgb(249,249,251);
+  width: 635rpx;
+  height: 80rpx;
+  margin: 2rpx 20rpx;
+  text-align: center;
+  align-items: self-end;
+  line-height: 70rpx;
+  border-left: 20rpx solid rgb(252,85,49);
+  border-radius: 0 35rpx 35rpx 20rpx;
+}
+
+/* 购买选择 */
+#purchase{
+  float: right;
+  /* background-color: green; */
+  height: 400rpx;
+  height: 235rpx;
+}
+
+#number{
+  /* background-color: yellow; */
+  width: 350rpx;
+  float: left;
+  margin-left: -348rpx;
+  margin-top: 55rpx;
+}
+
+/* 选择按钮 */
+.chooseNum{
+  background-color: #FFA500;
+  color: rgb(0, 0, 0);
+  border-radius: 15rpx;
+  margin-top: 21rpx;
+  float: left;
+}
+/* 份数 */
+#num{
+  /* background-color: red; */
+  display: inline-block;
+  width: 110rpx;
+  border-radius: 15rpx;
+  height: 72rpx;
+  font-size: 40rpx;
+  line-height: 75rpx;
+  font-family: \9ED1\4F53;
+  text-align: center;
+  margin: 20rpx 10rpx;
+  float: left;
+  border: 5rpx solid #FFA500;
+}
+
+#price{
+  display: inline-block;
+  background-color: #0A0A0A;
+  color: #FFF;
+  width: 200rpx;
+  height: 80rpx;
+  border-radius: 40rpx 0 0 40rpx;
+  font-size: 45rpx;
+  text-align: center;
+  line-height: 80rpx;
+  margin-top: 72rpx;
+}
+
+#account{
+  display: inline-block;
+  background-color: #FFA500;
+  width: 140rpx;
+  height: 80rpx;
+  font-size: 45rpx;
+  text-align: center;
+  line-height: 80rpx;
+  border-radius: 0rpx 40rpx 40rpx 0rpx;
+  margin-top: 72rpx;
+}
+
+#picture{
+  margin: 20rpx;
+}
+
+#picImage{
+  width: 565rpx;
+  margin-left:72rpx;
+  margin-top: 20rpx;
+  margin-bottom: 20rpx;
+  border-radius: 20rpx;
+}

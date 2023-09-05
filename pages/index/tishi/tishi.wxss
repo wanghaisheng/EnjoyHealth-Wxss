@@ -1,0 +1,22 @@
+/* pages/tishi/tishi.wxss */
+
+/* 按钮加图片 */
+button{
+  padding: 0;
+  border:none; /* 边框 */
+  background-color: transparent;/* 按钮透明  */
+}
+
+/* 轮播图 */
+swiper{
+  width: 100%;
+  /* height: calc(100vw * 352 /  1125); */
+  height: 31.28vw;
+}
+
+/* 图片样式 */
+image{
+  width: 100%;
+}
+
+

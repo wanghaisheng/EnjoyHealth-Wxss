@@ -1,0 +1,30 @@
+<!--pages/search/search.wxml-->
+<form bindsubmit="submit">
+<view class="wrapper">
+	<image src="../../../../images/sousuo@2x.png" class="icon"></image>
+	<input type="string" class="input" placeholder="请输入关键字" name="keyword" value="{{input}}" bindinput="bindinput" bindfocus="bindfocus"/>
+	<image src="../../../../images/sousou_sahnchu@2x.png" class="icon-clear" bindtap="clearInput" hidden="{{!isShowClearIcon}}" ></image>
+	<button formType="submit" class="text">搜索</button>
+</view>
+</form>
+
+<view class="area2">
+	<view class="area2__title">热门搜索</view>
+	<view class="area2__main">
+		<view wx:for="{{keywords}}" wx:key="*this" bindtap="tapItem" data-item="{{item}}">{{item}}</view>
+	</view>
+
+</view>
+
+<view class="area2" wx:if="{{searchHistory.length}}"> 
+	<view class="area2__title area3__title">
+		<view>历史搜索</view>
+		<image src="../../../../images/shanchu@2x.png" bindtap="clearHistory"></image>
+	</view>
+	<view class="area2__main">
+		<view wx:for="{{searchHistory}}" wx:key="*this" bindtap="tapItem" data-item="{{item}}">{{item}}</view>
+	</view>
+
+</view>
+
+

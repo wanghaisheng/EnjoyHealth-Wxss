@@ -1,0 +1,8 @@
+{
+  "usingComponents":{
+    "bodybuild": "../menu/mankind/bodybuild/bodybuild",
+    "lazyman": "../menu/mankind/lazyman/lazyman",
+    "timeint":"../menu/mankind/timeint/timeint"
+  },
+    "navigationBarTitleText": "菜谱"
+}

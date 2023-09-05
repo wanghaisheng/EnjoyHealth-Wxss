@@ -1,0 +1,72 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">外婆红烧肉</view>
+
+<!-- 食品简介 -->
+<view id="introduce">外婆红烧肉外焦里嫩，香甜润滑，油而不腻。和北方的红烧肉不同，少一分咸、多一分甜</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/96dda144ad345982cb2620ca09f431adcbef843e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto"></image>
+</view>
+
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、将五花肉切成3*3cm的棋子块
+  </view>
+  <view class="step">二、切好的五花肉冷水下锅，放入适量的葱姜。
+  </view>
+  <view class="step">三．五花肉热水中焯一下取出备用。
+  </view>
+  <view class="step">四．凉锅中放入焯好的五花肉，将葱，姜片，冰糖，老抽，盐，八角，桂皮，香叶放入锅里，倒入花雕酒没过肉。
+  </view>
+  <view class="step">五．大火烧开后改小火炖肉。
+  </view>
+  <view class="step">六．小火盖锅盖炖大约2小时。
+  </view>
+  <view class="step">五．大火烧开后改小火炖肉。
+  </view>
+  <view class="step">七．鹌鹑蛋煮熟剥蛋壳，锅里倒油烧至7成热，下入鹌鹑蛋油炸。
+  </view>
+  <view class="step">八．鹌鹑蛋表面炸成金黄色捞出备用。
+  </view>
+  <view class="step">九．炸好的鹌鹑蛋放入红烧肉里翻几下。
+  </view>
+  <view class="step">十．大火加热收一下汤汁即可
+  </view>
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material">五花肉</view>
+    <view class="material">鹌鹑蛋</view>
+    <view class="material">辅料（葱、姜、桂皮、八角、香叶）</view>
+    <view class="material">调料（花雕酒、冰糖、老抽、食盐）</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥{{money}}</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+

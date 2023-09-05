@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "breakfast": "../timeint/breakfast/breakfast",
+    "lunch": "../timeint/lunch/lunch",
+    "dinner": "../timeint/dinner/dinner"
+  }
+}

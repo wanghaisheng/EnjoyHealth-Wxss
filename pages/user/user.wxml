@@ -1,0 +1,64 @@
+<!--pages/user/user.wxml-->
+<view class='container'>
+  <!-- 用户信息 -->
+  <view class='userinfo'>
+    <view class='userinfo-avatar'>
+      <open-data type="userAvatarUrl"></open-data>
+    </view>
+    <view class='userinfo-name'>
+      <open-data type="userNickName"></open-data>
+    </view>
+  </view>
+  <!-- <view class='binding-phone'>
+    <text class='show-tip'>绑定手机号后可查看订单和领取优惠券，</text>
+    <text class='gotobinding' bindtap='toBindingPhone'>去绑定</text>
+  </view> -->
+  <!-- end 用户信息 -->
+
+  <view class='list-cont'>
+
+    <!-- 订单状态 -->
+    <view class='total-order'>
+      <view class='order-tit'>
+        <text style='font-weight:bold'>我的订单</text>
+        <view class='checkmore' bindtap='toOrderListPage' data-sts="0">
+          <text>查看全部 </text>
+          <text class='arrowhead'></text>
+        </view>
+      </view>
+      <view class='procedure'>
+        <view class='items' bindtap='toOrderListPage' data-sts="1">
+          <image src='../../images/icon/toPay.png'></image>
+          <text>待支付</text>
+          <text class='num-badge' wx:if="{{orderAmount.unPay>0}}">{{orderAmount.unPay}}</text>
+        </view>
+        <view class='items' bindtap='toOrderListPage' data-sts="2">
+          <image src='../../images/icon/toDelivery.png'></image>
+          <text>待发货</text>
+          <text class='num-badge' wx:if="{{orderAmount.payed>0}}">{{orderAmount.payed}}</text>
+        </view>
+        <view class='items' bindtap='toOrderListPage' data-sts="3">
+          <image src='../../images/icon/toTake.png'></image>
+          <text>待收货</text>
+          <text class='num-badge' wx:if="{{orderAmount.consignment>0}}">{{orderAmount.consignment}}</text>
+        </view>
+        <view class='items' bindtap='toOrderListPage' data-sts="5">
+          <image src='../../images/icon/toComment.png'></image>
+          <text>已完成</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- 其他服务 -->
+    <view class='my-menu'>
+      <view class='memu-item' bindtap='toContact'>
+        <view class="i-name">
+          <image src='../../images/icon/promotion.png'></image>
+          <text>营养师服务</text>
+        </view>
+        <view class='arrowhead'></view>
+      </view>
+    </view>
+  </view>
+
+</view>

@@ -1,0 +1,54 @@
+<!--pages/index/index.wxml-->
+
+<view class="setting"> </view>
+<view class = "imagesize">
+    <image id="bottompic" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/轻饮生活.jpg"></image> 
+</view>
+
+<view class="title">轻食生活</view>
+
+<!--搜索框-->
+<view>
+  <view class="top">
+    <view class="search">
+      <view class="search_in">
+        <!-- <image src="#"></image> -->
+        <input type="text" placeholder="请输入搜索内容"/>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- lunbotu -->
+<view class='setting'>
+<!-- 1、转盘 -->
+<button class="tapbtn1" bindtap="tozhuanpan">
+    <!-- <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/转盘.png'></image> -->
+    <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/dazhuanpan.png'></image>
+</button>
+<!-- 2、热量 -->
+<button class="tapbtn1" bindtap="toreliang">
+    <!-- <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/热量.png'></image> -->
+    <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/shiwureliang.png'></image>
+</button>
+<!-- 3、识别 -->
+<button class="tapbtn1" bindtap="toshibie">
+    <!-- <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/菜谱.png'></image> -->
+    <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/tangshicaipu.png'></image>
+</button>
+<!-- 4、推荐 -->
+<button class="tapbtn1" bindtap="totishi">
+    <!-- <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/推荐.png'></image> -->
+    <image class="tapimg1" src='https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/geinituijian.png'></image>
+</button>
+</view>
+
+<!-- 功能名字 -->
+<view class='setting'>
+    <text class='text1'>转盘</text>
+    <text class='text1'>热量</text>
+    <text class='text1'>菜谱</text>
+    <text class='text1'>推荐</text>
+</view>
+
+

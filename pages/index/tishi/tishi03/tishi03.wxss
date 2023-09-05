@@ -1,0 +1,58 @@
+/* pages/tishi/tishi03/tishi03.wxss */
+/* 1、标题 */
+.title {
+    margin-top: 30rpx;
+    font-size: 30px;
+    color: rgb(0, 73, 63);
+    text-align: center;
+    font-family: fantasy;
+    font-weight: bolder;
+  }
+  /* 2、背景颜色 */
+  .baikeinfo {
+    padding: 20rpx;
+    margin: 20rpx 20rpx;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0rpx 2rpx 4rpx 4rpx #074d41;
+    height: 600rpx;
+    width: auto;
+    /* background: #0561ac; */
+    background: rgb(116,132,170);
+    border-radius: 20rpx;
+    font-family: \5B8B\4F53;
+    
+  }
+  /* 3、内容板块位置 */
+  .baikecard {
+    /* display: flex; */
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+  }
+  /* 4、内容大小 */
+  .baikecontent {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    -webkit-box-orient: vertical;
+    font-size: 24px;
+    color: #fff;
+    margin: 30rpx 50rpx;
+    line-height: 70rpx;
+  }
+
+  /* 推荐菜品下面的图片 */
+  #foodpic{
+    width: 650rpx;
+    height: 371rpx;
+    margin-left: 53rpx;
+  }
+
+  /* 按钮可用 */
+.btn{
+  height: 90rpx;
+  width: 100% ;
+  color: white;
+  font-size: 30rpx ;
+  background-color:rgb(116,132,170);
+}

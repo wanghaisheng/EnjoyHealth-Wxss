@@ -1,0 +1,18 @@
+<!--pages/tishi/tishi.wxml-->
+<!-- 1、今日推荐 -->
+<view class="this_title">今日推荐</view>
+
+<!-- 2、轮播图 -->
+<swiper autoplay interval="1500" circular indicator-dots indicator-color="#0094ff" indicator-active-color="#ff0094">
+    <swiper-item> <image mode="widthFix" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/tuijian03.jpg" /> </swiper-item>
+    <swiper-item> <image mode="widthFix" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/tuijian02.png"/> </swiper-item>
+    <swiper-item> <image mode="widthFix" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/tuijian01.jpg" /> </swiper-item>
+</swiper>
+
+<!-- 3、菜单页面 -->
+<text>\n\n</text>
+<view class="this_title">爱好推荐</view>
+<button style="width:100vw" class="button" bindtap="toshouquan">
+<!-- 推荐菜品下面图片 -->
+    <image id="foodpic" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/images/food.png?versionId=CAEQIRiBgMDP8IXY_hciIDY1ZTViZWUyZjk5YzRjMTNiYzk5M2U2NTZjMDBjMWFi"></image>
+</button>

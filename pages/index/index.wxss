@@ -1,0 +1,117 @@
+/* pages/index/index.wxss */
+
+/* 轮播图 */
+swiper {
+  width: 100%;
+  /* height: calc(100vw * 352 /  1125); */
+  height: 60vw;
+}
+
+/* 标题 */
+.title {
+  margin-top: 30rpx;
+  font-size: 30px;
+  color: rgb(0, 73, 63);
+  text-align: center;
+  font-family: fantasy;
+  font-weight: bolder;
+}
+
+/* 图片 */
+
+.imagesize {
+  display: flex;
+  justify-content: center;
+}
+
+.imagesize image {
+  width: 85%;
+  border-radius: 16rpx;
+}
+
+
+/* 文本框的框架 */
+.setting {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 功能按钮下面的文字 */
+.text1 {
+  font-size: 12px;
+  display: grid;
+  width: 100%;
+  overflow-x: hidden;
+  grid-template-rows: 50rpx 100rpx;
+  grid-auto-rows: 50rpx;
+  text-align: center;
+  /* 行高固定 */
+  height: 55rpx;
+}
+
+#bottompic {
+  height: 330rpx;
+}
+
+/* 搜索框 */
+.search {
+  padding-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 120rpx;
+
+}
+
+.search .search_in {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  height: 100rpx;
+  width: 650rpx;
+  background-color: #ffffff;
+  border-radius: 35rpx;
+  border: 6rpx solid #50e3c2;
+}
+
+.search_in image {
+  height: 45rpx;
+  width: 45rpx;
+}
+
+.search input {
+  width: 480rpx;
+}
+
+.search_in .search_btn {
+  /* height: 50rpx;
+    width: 110rpx; */
+  border-radius: 55rpx;
+  baba: #000000;
+  text-align: center;
+  line-height: 55rpx;
+  cursor: pointer;
+}
+
+.search_in .bt_connect {
+  width: 660rpx;
+  height: 60rpx;
+  border: 6rpx solid #50e3c2;
+  border-radius: 16rpx;
+  font-size: 35rpx;
+  /* margin-top: 40rpx; */
+  display: flex;
+  /* justify-content: center; */
+  /* align-items: center; */
+}
+
+/* 按钮的点击效果 */
+.search_in .hover-class-1 {
+  top: 3rpx;
+  background-color: #ffffff;
+}

@@ -1,0 +1,45 @@
+/* 1、橙色标题 */
+.this_title{
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 5px;
+
+}
+
+/* 2、按钮加图片 */
+.tapimg1{  
+  width: 100rpx;
+  height: 100rpx;
+
+}
+.tapbtn1{
+  background-color: #ffffff;
+  padding: 0;
+  border:none;
+  width: 100rpx;
+  height: 100rpx;
+}
+
+/* 3、底部按钮和文字字样 */
+.anniu{
+  display:flex;
+  position:fixed; 
+  width:95%;
+  z-index:666;
+  bottom:55rpx;
+  border:none;/*设置按钮边框*/
+  background-color: transparent;/*按钮透明*/ 
+  }
+  .wenzi{
+  font-size:30rpx;
+  color:#ffffff;
+  width:100%;
+  border:2rpx solid #ffffff;
+  border-radius:15rpx;
+  height: 95rpx;
+  text-align: center;
+  line-height:95rpx;
+  display: grid;
+
+  }

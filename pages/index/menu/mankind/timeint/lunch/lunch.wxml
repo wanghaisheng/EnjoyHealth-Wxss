@@ -1,0 +1,50 @@
+<view class='container'>
+  
+    <view class='tab-wrapper'>
+        <!-- 咖喱牛肉饭 -->
+    <navigator class='foodbox' hover-class="none" url="/pages/index/menu/foodkind/cooking/cooking">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://cocochimp-markdown-img.oss-cn-beijing.aliyuncs.com/咖喱牛肉饭.jpg" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">咖喱牛肉饭</view>
+                <!-- 食品简介 -->
+                <view class="introduce">好吃，吃的饱</view>
+            </view>
+        </view>
+    </navigator>
+        <!-- 外婆红烧肉 -->
+    <navigator class='tab' hover-class="none" url="/pages/index/menu/foodkind/hongshaorou/hongshaorou">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/96dda144ad345982cb2620ca09f431adcbef843e?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2UxNTA=,g_7,xp_5,yp_5/format,f_auto" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">外婆红烧肉</view>
+                <!-- 食品简介 -->
+                <view class="introduce">很香，拿手好菜</view>
+            </view>
+        </view>
+    </navigator>
+        <!-- 哈尔滨水饺 -->
+    <navigator class='tab' hover-class="none" url="/pages/index/menu/foodkind/dumping/dumping">
+        <!-- 食物图片与文字介绍 -->
+        <view class="pic-cont">
+            <image class="picture" mode="aspectFill" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fm.tuniucdn.com%2Ffilebroker%2Fcdn%2Fvnd%2F29%2F32%2F2932463cc1f97e1fe75313deef75431f_w500_h280_c1_t0.jpg&refer=http%3A%2F%2Fm.tuniucdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1651041868&t=40ae126173a915137e9e50cd3f614159" />
+            <!-- 文字容器 -->
+            <view class="wordcon">
+                <!-- 食物名字 -->
+                <view class="foodname">哈尔滨水饺</view>
+                <!-- 食品简介 -->
+                <view class="introduce">美味，量很足</view>
+            </view>
+        </view>
+    </navigator>
+    
+    </view>   
+
+
+</view>

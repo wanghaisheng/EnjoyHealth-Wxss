@@ -1,0 +1,37 @@
+<!--pages/tishi/tishi03/tishi03.wxml-->
+
+<view class='this_title'>定制套餐</view>
+
+<!-- 按钮 -->
+<span style="font-size:18px;"><view>
+  <button type="primary" bindtap="bindViewTap">点击！</button>
+  <view>
+    <modal title="" hidden="{{modalHidden}}" confirm-text="确定"
+    cancel-text="取消" bindconfirm="modalBindaconfirm" bindcancel="modalBindcancel">
+    <text>靓仔，\n😀点击确定为你推荐套餐👇</text>
+    </modal>
+  </view>
+</view></span>
+
+
+<!-- 1、显示信息 -->
+<view class="title">推荐菜品</view>
+    <scroll-view class='baikeinfo' scroll-y>
+    
+      <view class='baikecard'>
+        <view class='baikecontent'>
+          <text>{{liebiao}}</text>
+        </view>
+      </view>
+    </scroll-view>
+
+<block wx:if="{{isshow}}">
+
+<!-- 2、完成按钮 -->
+<view class="anniu">
+  <button class="btn"  formType="submit" bindtap="totishi">
+   回到推荐页面
+ </button>
+</view>
+</block>
+

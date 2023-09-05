@@ -1,0 +1,57 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">哈尔滨水饺</view>
+
+<!-- 食品简介 -->
+<view id="introduce">“坐着不如倒着，好吃不过饺子”</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fm.tuniucdn.com%2Ffilebroker%2Fcdn%2Fvnd%2F29%2F32%2F2932463cc1f97e1fe75313deef75431f_w500_h280_c1_t0.jpg&refer=http%3A%2F%2Fm.tuniucdn.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1651041868&t=40ae126173a915137e9e50cd3f614159"></image>
+</view>
+
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、用凉水。面与水的比例：四碗面，一碗水。在盆中揉成面团后，放置20分钟，
+  </view>
+  <view class="step">二、擀：把饧好的面团放在案板上，搓成直径2-3厘米的圆柱形长条。再用擀面杖擀成直径适度（4-7厘米）的、厚约0.5-1毫米的、中心部分稍厚些的饺子皮。
+  </view>
+  <view class="step">三．捏：先将剂子揉成扁圆形，然后一边用双手手指捏压，一边旋转。
+  </view>
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material">大白菜</view>
+    <view class="material">面粉</view>
+    <view class="material">肉末</view>
+    <view class="material">小葱</view>
+    <view class="material">大蒜</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥{{money}}</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+

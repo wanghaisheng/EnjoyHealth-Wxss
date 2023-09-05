@@ -1,0 +1,24 @@
+/* 右边tab容器整体布局 */
+.tab-wrapper{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: space-around;
+
+}
+/* 单独tab的容器设置 */
+.tab{
+    margin-right: 18rpx;
+    margin-top: 50rpx;
+    line-height: 70rpx;
+    background-color: #fff;
+    border-radius: 35rpx;
+    width: 396rpx;
+    text-align: center;
+    border: 1rpx solid #FF4040;
+}
+/* 组件被点击后的颜色变化 */
+.tab-active{
+    display: block;
+    background-color: #FF4040;
+}

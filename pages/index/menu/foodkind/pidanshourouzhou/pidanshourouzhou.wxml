@@ -1,0 +1,72 @@
+<view id="ui"></view>
+<!-- 食品标题 -->
+<view id="title">皮蛋瘦肉粥</view>
+
+<!-- 食品简介 -->
+<view id="introduce">广东省地方传统著名小吃，营养丰富，以切成小块的皮蛋及咸瘦肉为配料。</view>
+
+<!-- 食品图片 -->
+<view id="picture">
+  <image id="picImage" mode="aspectFill" src="https://bkimg.cdn.bcebos.com/pic/64380cd7912397dda1441483c0c8a5b7d0a20df429ab?x-bce-process=image/watermark,image_d2F0ZXIvYmFpa2U4MA==,g_7,xp_5,yp_5/format,f_auto"></image>
+</view>
+
+<!-- 制作步骤 -->
+<view class="smallTitle">步骤</view>
+<view id="steps">
+  <view class="step">
+    一、将大米洗净沥干，加入香油，搅匀后放置一旁，浸泡15~30分钟；
+  </view>
+  <view class="step">二、香葱洗净切碎，姜去皮切成细丝；
+  </view>
+  <view class="step">三、皮蛋剥皮，洗净后，切成小块备用；
+  </view>
+  <view class="step">四、锅中先倒入香油浸泡后的米，再倒入清水，最后倒入姜丝，大火煮开后，改成小火煮20分钟，期间每隔5分钟用勺子沿同一方向搅拌一次，以免黏锅底;
+  </view>
+  <view class="step">五、把里脊肉先切成片，再切丝，放入碗中，加入料酒·生抽·食盐，搅匀腌制10分钟左右，撒上生粉腌用。
+  </view>
+  <view class="step">六、当粥煮到米完全熟透，粥水也比较浓稠时，放入皮蛋，继续煮10分钟；
+  </view>
+  <view class="step">七、然后把腌制好的里脊肉丝搅拌均匀后，倒入粥中；
+  </view>
+  <view class="step">八、调入食盐、香油、葱花，鸡精，并用勺子不断搅动；
+  </view>
+  <view class="step">九、质地黏稠、口感顺滑、味道独特的皮蛋瘦肉粥就做好了！
+  </view>
+
+</view>
+
+<!-- 购买 -->
+<view class="smallTitle">原料</view>
+<view id="buy">
+  <!-- 制作材料 -->
+  <view id="materials">
+    <view class="material">大米</view>
+    <view class="material">猪里脊肉</view>
+    <view class="material">皮蛋</view>
+    <view class="material">香葱</view>
+    <view class="material">料酒</view>
+    <view class="material">香油</view>
+    <view class="material">生粉</view>
+  </view>
+
+  <!-- 购买选择 -->
+  <view id="purchase">
+   <!-- 份数 -->
+    <view id="number">
+      <button bindtap="buynumber" data-operation="{{-1}}" size="mini" class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx; text-align: center;" >-</button>
+      <text id="num" >{{fenshu}}人份</text>
+      <button  bindtap="buynumber" data-operation="{{1}}" size="mini"class="chooseNum" style="width:75rpx;height: 75rpx; font-size: 40rpx; font-weight: 500;line-height: 70rpx;text-align: center;">+</button>
+    </view>
+
+    <!-- 下单 -->
+    <view id="price">￥{{money}}</view>
+    <view id="account">结算</view>
+  </view>
+</view>
+
+
+
+
+
+
+
